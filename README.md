@@ -1,8 +1,7 @@
 # Motor_de_Passo
 
-##Equipe 
-
+# Equipe
 *Lucas 
-* Mateus Paiva
+* Matheus Paiva
 * Tiago
 * Betarelli
