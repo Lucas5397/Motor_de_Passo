@@ -2539,9 +2539,11 @@ void delay( unsigned int t );
 
 void main(void)
 {
+    TRISD = 0;
     while(1)
     {
-        A+ = 1;
+        A + = 1;
         delay(1000);
+
     }
 }
