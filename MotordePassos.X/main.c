@@ -5,7 +5,7 @@
  * Created on 21 de Maio de 2021, 14:37
  */
 
-// Integrantes: Lucas Gabriel, Lucas Betarelli, Tiago Henrique, Matheus Paiva
+// Integrantes: Lucas Gabriel, Lucas Betarelli, Tiago Henrique, Mateus Paiva
 
 #include <xc.h>
 #include "config.h"
