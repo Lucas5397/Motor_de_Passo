@@ -333,9 +333,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 138 ]
 }
 "32
-[; ;configuracao.c: 32: char passos [8] = { 0x02,0x06, 0x04,0x05, 0x01,0x09,0x08, 0x0A};
-[v _passos `uc ~T0 @X0 -> 8 `i e ]
-[i _passos
+[; ;configuracao.c: 32: char meiopassos [8] = { 0x02,0x06, 0x04,0x05, 0x01,0x09,0x08, 0x0A};
+[v _meiopassos `uc ~T0 @X0 -> 8 `i e ]
+[i _meiopassos
 :U ..
 -> -> 2 `i `uc
 -> -> 6 `i `uc
@@ -348,62 +348,123 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "33
-[; ;configuracao.c: 33: char indice = 0;
+[; ;configuracao.c: 33: char passos [4] = {0x02,0x04,0x01,0x08};
+[v _passos `uc ~T0 @X0 -> 4 `i e ]
+[i _passos
+:U ..
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 8 `i `uc
+..
+]
+"34
+[; ;configuracao.c: 34: char indice = 0;
 [v _indice `uc ~T0 @X0 1 e ]
 [i _indice
 -> -> 0 `i `uc
 ]
-"35
-[; ;configuracao.c: 35: void stepMotor( char sentido, int graus, int t)
-[v _stepMotor `(v ~T0 @X0 1 ef3`uc`i`i ]
-"36
-[; ;configuracao.c: 36: {
+"37
+[; ;configuracao.c: 37: int numpassos;
+[v _numpassos `i ~T0 @X0 1 e ]
+"38
+[; ;configuracao.c: 38: int x;
+[v _x `i ~T0 @X0 1 e ]
+"40
+[; ;configuracao.c: 40: void stepMotor( char sentido, int graus, int t, char x)
+[v _stepMotor `(v ~T0 @X0 1 ef4`uc`i`i`uc ]
+"41
+[; ;configuracao.c: 41: {
 {
 [e :U _stepMotor ]
-"35
-[; ;configuracao.c: 35: void stepMotor( char sentido, int graus, int t)
+"40
+[; ;configuracao.c: 40: void stepMotor( char sentido, int graus, int t, char x)
 [v _sentido `uc ~T0 @X0 1 r1 ]
 [v _graus `i ~T0 @X0 1 r2 ]
 [v _t `i ~T0 @X0 1 r3 ]
-"36
-[; ;configuracao.c: 36: {
-[f ]
-"37
-[; ;configuracao.c: 37:     int numpassos;
-[v _numpassos `i ~T0 @X0 1 a ]
-"38
-[; ;configuracao.c: 38:     int i;
-[v _i `i ~T0 @X0 1 a ]
-"39
-[; ;configuracao.c: 39:     numpassos = (graus * ppr)/180;
-[e = _numpassos / * _graus _ppr -> 180 `i ]
-"40
-[; ;configuracao.c: 40:     for ( i = 0; i<numpassos; i++)
-{
-[e = _i -> 0 `i ]
-[e $U 143  ]
-[e :U 140 ]
+[v _x `uc ~T0 @X0 1 r4 ]
 "41
-[; ;configuracao.c: 41:     {
-{
+[; ;configuracao.c: 41: {
+[f ]
 "42
-[; ;configuracao.c: 42:         PORTD = (( PORTD & 0XF0) | passos[indice] );
-[e = _PORTD -> | & -> _PORTD `i -> 240 `i -> *U + &U _passos * -> _indice `ux -> -> # *U &U _passos `ui `ux `i `uc ]
+[; ;configuracao.c: 42:     if (x == 8)
+[e $ ! == -> _x `i -> 8 `i 140  ]
 "43
-[; ;configuracao.c: 43:         indice = (indice + sentido) % 8;
-[e = _indice -> % + -> _indice `i -> _sentido `i -> 8 `i `uc ]
+[; ;configuracao.c: 43:     {
+{
 "44
-[; ;configuracao.c: 44:         delay(t);
-[e ( _delay (1 -> _t `ui ]
+[; ;configuracao.c: 44:         numpassos = (graus * ppr)/180;
+[e = _numpassos / * _graus _ppr -> 180 `i ]
 "45
-[; ;configuracao.c: 45:     }
-}
-[e ++ _i -> 1 `i ]
-[e :U 143 ]
-[e $ < _i _numpassos 140  ]
+[; ;configuracao.c: 45:         for ( x = 0; x<numpassos; x++)
+{
+[e = _x -> -> 0 `i `uc ]
+[e $U 144  ]
 [e :U 141 ]
-}
 "46
-[; ;configuracao.c: 46: }
+[; ;configuracao.c: 46:         {
+{
+"47
+[; ;configuracao.c: 47:             PORTD = (( PORTD & 0XF0) | meiopassos[indice] );
+[e = _PORTD -> | & -> _PORTD `i -> 240 `i -> *U + &U _meiopassos * -> _indice `ux -> -> # *U &U _meiopassos `ui `ux `i `uc ]
+"48
+[; ;configuracao.c: 48:             indice = (indice + sentido) % 8;
+[e = _indice -> % + -> _indice `i -> _sentido `i -> 8 `i `uc ]
+"49
+[; ;configuracao.c: 49:             delay(t);
+[e ( _delay (1 -> _t `ui ]
+"50
+[; ;configuracao.c: 50:         }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 144 ]
+[e $ < -> _x `i _numpassos 141  ]
+[e :U 142 ]
+}
+"51
+[; ;configuracao.c: 51:     }
+}
+[e :U 140 ]
+"53
+[; ;configuracao.c: 53:     if ( x == 4)
+[e $ ! == -> _x `i -> 4 `i 145  ]
+"54
+[; ;configuracao.c: 54:     {
+{
+"56
+[; ;configuracao.c: 56:        numpassos = (graus * ppr)/360;
+[e = _numpassos / * _graus _ppr -> 360 `i ]
+"57
+[; ;configuracao.c: 57:         for ( x = 0; x<numpassos; x++)
+{
+[e = _x -> -> 0 `i `uc ]
+[e $U 149  ]
+[e :U 146 ]
+"58
+[; ;configuracao.c: 58:         {
+{
+"59
+[; ;configuracao.c: 59:             PORTD = (( PORTD & 0XF0) | passos[indice] );
+[e = _PORTD -> | & -> _PORTD `i -> 240 `i -> *U + &U _passos * -> _indice `ux -> -> # *U &U _passos `ui `ux `i `uc ]
+"60
+[; ;configuracao.c: 60:             indice = (indice + sentido) % 4;
+[e = _indice -> % + -> _indice `i -> _sentido `i -> 4 `i `uc ]
+"61
+[; ;configuracao.c: 61:             delay(t);
+[e ( _delay (1 -> _t `ui ]
+"62
+[; ;configuracao.c: 62:         }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 149 ]
+[e $ < -> _x `i _numpassos 146  ]
+[e :U 147 ]
+}
+"63
+[; ;configuracao.c: 63:     }
+}
+[e :U 145 ]
+"67
+[; ;configuracao.c: 67: }
 [e :UE 139 ]
 }
