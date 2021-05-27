@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\20185210\AppData\Local\Temp\s7vg.o
+$C:\Users\20185210\AppData\Local\Temp\saoo.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 2 2
 $dist/default/production\MotordePassos.X.production.o
@@ -75,22 +75,22 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\MotordePassos.X.production.o
-7ED cinit CODE >778:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7ED cinit CODE >781:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7ED cinit CODE >828:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7EE cinit CODE >829:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7EF cinit CODE >830:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F0 cinit CODE >831:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F1 cinit CODE >832:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F2 cinit CODE >833:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F3 cinit CODE >834:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F4 cinit CODE >835:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F5 cinit CODE >836:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7F6 cinit CODE >837:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7FB cinit CODE >841:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7FC cinit CODE >847:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7FC cinit CODE >849:C:\Users\20185210\AppData\Local\Temp\s7vg.
-7FD cinit CODE >850:C:\Users\20185210\AppData\Local\Temp\s7vg.
+7ED cinit CODE >778:C:\Users\20185210\AppData\Local\Temp\saoo.
+7ED cinit CODE >781:C:\Users\20185210\AppData\Local\Temp\saoo.
+7ED cinit CODE >828:C:\Users\20185210\AppData\Local\Temp\saoo.
+7EE cinit CODE >829:C:\Users\20185210\AppData\Local\Temp\saoo.
+7EF cinit CODE >830:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F0 cinit CODE >831:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F1 cinit CODE >832:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F2 cinit CODE >833:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F3 cinit CODE >834:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F4 cinit CODE >835:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F5 cinit CODE >836:C:\Users\20185210\AppData\Local\Temp\saoo.
+7F6 cinit CODE >837:C:\Users\20185210\AppData\Local\Temp\saoo.
+7FB cinit CODE >841:C:\Users\20185210\AppData\Local\Temp\saoo.
+7FC cinit CODE >847:C:\Users\20185210\AppData\Local\Temp\saoo.
+7FC cinit CODE >849:C:\Users\20185210\AppData\Local\Temp\saoo.
+7FD cinit CODE >850:C:\Users\20185210\AppData\Local\Temp\saoo.
 697 text5 CODE >16:C:\Users\20185210\MPLABXProjects\Motor_de_Passo\MotordePassos.X\configuracao.c
 697 text5 CODE >19:C:\Users\20185210\MPLABXProjects\Motor_de_Passo\MotordePassos.X\configuracao.c
 69A text5 CODE >20:C:\Users\20185210\MPLABXProjects\Motor_de_Passo\MotordePassos.X\configuracao.c
@@ -165,23 +165,23 @@ $dist/default/production\MotordePassos.X.production.o
 714 maintext CODE >24:C:\Users\20185210\MPLABXProjects\Motor_de_Passo\MotordePassos.X\main.c
 71E maintext CODE >25:C:\Users\20185210\MPLABXProjects\Motor_de_Passo\MotordePassos.X\main.c
 71F maintext CODE >26:C:\Users\20185210\MPLABXProjects\Motor_de_Passo\MotordePassos.X\main.c
-6A8 inittext CODE >802:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6A8 inittext CODE >803:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6A9 inittext CODE >804:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6AA inittext CODE >805:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6AB inittext CODE >806:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6AC inittext CODE >813:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6AC inittext CODE >814:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B1 inittext CODE >815:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B2 inittext CODE >816:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B3 inittext CODE >817:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B4 inittext CODE >818:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B5 inittext CODE >819:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B6 inittext CODE >820:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B7 inittext CODE >821:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B8 inittext CODE >822:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6B9 inittext CODE >823:C:\Users\20185210\AppData\Local\Temp\s7vg.
-6BA inittext CODE >824:C:\Users\20185210\AppData\Local\Temp\s7vg.
+6A8 inittext CODE >802:C:\Users\20185210\AppData\Local\Temp\saoo.
+6A8 inittext CODE >803:C:\Users\20185210\AppData\Local\Temp\saoo.
+6A9 inittext CODE >804:C:\Users\20185210\AppData\Local\Temp\saoo.
+6AA inittext CODE >805:C:\Users\20185210\AppData\Local\Temp\saoo.
+6AB inittext CODE >806:C:\Users\20185210\AppData\Local\Temp\saoo.
+6AC inittext CODE >813:C:\Users\20185210\AppData\Local\Temp\saoo.
+6AC inittext CODE >814:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B1 inittext CODE >815:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B2 inittext CODE >816:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B3 inittext CODE >817:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B4 inittext CODE >818:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B5 inittext CODE >819:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B6 inittext CODE >820:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B7 inittext CODE >821:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B8 inittext CODE >822:C:\Users\20185210\AppData\Local\Temp\saoo.
+6B9 inittext CODE >823:C:\Users\20185210\AppData\Local\Temp\saoo.
+6BA inittext CODE >824:C:\Users\20185210\AppData\Local\Temp\saoo.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -208,22 +208,22 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 stepMotor@numpassos 28 0 BANK0 1 cstackBANK0 dist/default/production\MotordePassos.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 stepMotor@sentido 2A 0 BANK0 1 cstackBANK0 dist/default/production\MotordePassos.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\20185210\AppData\Local\Temp\s7vg.o
+___sp 0 0 STACK 2 stack C:\Users\20185210\AppData\Local\Temp\saoo.o
 _main DF4 0 CODE 0 maintext dist/default/production\MotordePassos.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
-start 0 0 CODE 0 init C:\Users\20185210\AppData\Local\Temp\s7vg.o
+start 0 0 CODE 0 init C:\Users\20185210\AppData\Local\Temp\saoo.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\MotordePassos.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\s7vg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\s7vg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\s7vg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\s7vg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\s7vg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\s7vg.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\saoo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\saoo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\saoo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\saoo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\saoo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\20185210\AppData\Local\Temp\saoo.o
 wtemp0 7E 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 ___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\MotordePassos.X.production.o
@@ -243,7 +243,7 @@ __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 start_initialization FDA 0 CODE 0 cinit dist/default/production\MotordePassos.X.production.o
 _TRISDbits 88 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\MotordePassos.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\20185210\AppData\Local\Temp\s7vg.o
+___int_sp 0 0 STACK 2 stack C:\Users\20185210\AppData\Local\Temp\saoo.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -296,7 +296,7 @@ _stepMotor E44 0 CODE 0 text1 dist/default/production\MotordePassos.X.production
 __CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\20185210\AppData\Local\Temp\s7vg.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\20185210\AppData\Local\Temp\saoo.o
 _indice 37 0 BANK0 1 bssBANK0 dist/default/production\MotordePassos.X.production.o
 __pdataBANK0 2D 0 BANK0 1 dataBANK0 dist/default/production\MotordePassos.X.production.o
 __size_of___wmul 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
@@ -311,8 +311,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __Hinittext 0 0 ABS 0 inittext -
 ___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\MotordePassos.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\20185210\AppData\Local\Temp\s7vg.o
-stacklo 0 0 ABS 0 - C:\Users\20185210\AppData\Local\Temp\s7vg.o
+stackhi 0 0 ABS 0 - C:\Users\20185210\AppData\Local\Temp\saoo.o
+stacklo 0 0 ABS 0 - C:\Users\20185210\AppData\Local\Temp\saoo.o
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\MotordePassos.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
