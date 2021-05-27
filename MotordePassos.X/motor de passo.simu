@@ -1,0 +1,55 @@
+<circuit Simu_Step_nS="1000" reactStep="50" animate="1" noLinAcc="5" Speed_per="100" type="simulide_0.4" Speed_sps="1000000">
+
+Unique  Id: ULN2804-4: 
+Circuit Id: ULN2804-28
+<item Show_id="true" Logic_Symbol="false" hflip="1" y="-132" vflip="1" itemtype="Subcircuit" valLabely="0" x="-532" circPos="0,0" labely="-20" objectName="ULN2804-4" valLabelx="0" id="ULN2804-28" labelx="0" valLabRot="0" labelrot="0" mainComp="false" rotation="0" circRot="0" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: pic16f887-3: 
+Circuit Id: pic16f887-42
+<item Show_id="true" Logic_Symbol="false" hflip="1" y="-196" varList=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," vflip="1" itemtype="PIC" valLabely="0" x="-652" Mhz="4" circPos="0,0" Program="../../../Downloads/MotordePassos.X.production.hex" Auto_Load="false" labely="-20" objectName="pic16f887-3" valLabelx="0" id="pic16f887-42" labelx="0" valLabRot="0" eeprom="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" labelrot="0" mainComp="false" rotation="0" circRot="nan" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Stepper-2: 
+Circuit Id: Stepper-50
+<item Show_id="true" Resistance="100" Bipolar="false" hflip="1" y="-92" vflip="1" itemtype="Stepper" valLabely="0" Unit=" Ω" Steps="4" x="-324" circPos="0,0" labely="-62" objectName="Stepper-2" valLabelx="0" id="Stepper-50" labelx="-32" valLabRot="0" labelrot="0" mainComp="false" rotation="0" circRot="9.9223953315168974e+260" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Rail-1: 
+Circuit Id: Rail-18
+<item Show_id="false" hflip="1" y="12" vflip="1" itemtype="Rail" valLabely="8" Voltage="5" Unit=" V" x="-444" circPos="0,0" labely="-24" objectName="Rail-1" Show_Volt="true" valLabelx="-16" id="Rail-18" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" rotation="0" circRot="0" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-13: 
+Circuit Id: Connector-19
+<item Show_id="false" hflip="1" y="-92" endpinid="Rail-1-outnod" vflip="1" itemtype="Connector" valLabely="0" x="-396" circPos="0,0" labely="-24" enodeid="Circ_eNode-14" objectName="Connector-13" valLabelx="0" id="Connector-19" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="Stepper-2-PinCo" rotation="0" circRot="0" pointList="-396,-92,-428,-92,-428,12" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-16: 
+Circuit Id: Connector-16
+<item Show_id="false" hflip="1" y="-44" endpinid="ULN2804-4-IN1" vflip="1" itemtype="Connector" valLabely="0" x="-660" circPos="0,0" labely="-24" enodeid="enode-16" objectName="Connector-16" valLabelx="0" id="Connector-16" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="pic16f887-3-RD0" rotation="0" circRot="0" pointList="-660,-44,-676,-44,-676,-4,-556,-4,-556,-124,-540,-124" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-17: 
+Circuit Id: Connector-17
+<item Show_id="false" hflip="1" y="-36" endpinid="ULN2804-4-IN2" vflip="1" itemtype="Connector" valLabely="0" x="-660" circPos="0,0" labely="-24" enodeid="enode-17" objectName="Connector-17" valLabelx="0" id="Connector-17" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="pic16f887-3-RD1" rotation="0" circRot="0" pointList="-660,-36,-684,-36,-684,4,-564,4,-564,-116,-540,-116" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-18: 
+Circuit Id: Connector-18
+<item Show_id="false" hflip="1" y="-36" endpinid="ULN2804-4-IN3" vflip="1" itemtype="Connector" valLabely="0" x="-596" circPos="0,0" labely="-24" enodeid="enode-18" objectName="Connector-18" valLabelx="0" id="Connector-18" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="pic16f887-3-RD2" rotation="0" circRot="0" pointList="-596,-36,-572,-36,-572,-108,-540,-108" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-19: 
+Circuit Id: Connector-19
+<item Show_id="false" hflip="1" y="-44" endpinid="ULN2804-4-IN4" vflip="1" itemtype="Connector" valLabely="0" x="-596" circPos="0,0" labely="-24" enodeid="enode-19" objectName="Connector-19" valLabelx="0" id="Connector-19" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="pic16f887-3-RD3" rotation="0" circRot="1.0332784965711945e-315" pointList="-596,-44,-580,-44,-580,-100,-540,-100" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-20: 
+Circuit Id: Connector-20
+<item Show_id="false" hflip="1" y="-124" endpinid="Stepper-2-PinA1" vflip="1" itemtype="Connector" valLabely="0" x="-492" circPos="0,0" labely="-24" enodeid="enode-20" objectName="Connector-20" valLabelx="0" id="Connector-20" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="ULN2804-4-OUT1" rotation="0" circRot="1.0332803147327712e-315" pointList="-492,-124,-396,-124" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-26: 
+Circuit Id: Connector-26
+<item Show_id="false" hflip="1" y="-116" endpinid="Stepper-2-PinA2" vflip="1" itemtype="Connector" valLabely="0" x="-492" circPos="0,0" labely="-24" enodeid="enode-26" objectName="Connector-26" valLabelx="0" id="Connector-26" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="ULN2804-4-OUT2" rotation="0" circRot="0" pointList="-492,-116,-448,-116,-448,-76,-396,-76" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-27: 
+Circuit Id: Connector-27
+<item Show_id="false" hflip="1" y="-108" endpinid="Stepper-2-PinB1" vflip="1" itemtype="Connector" valLabely="0" x="-492" circPos="0,0" labely="-24" enodeid="enode-27" objectName="Connector-27" valLabelx="0" id="Connector-27" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="ULN2804-4-OUT3" rotation="0" circRot="0" pointList="-492,-108,-396,-108" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+
+Unique  Id: Connector-28: 
+Circuit Id: Connector-28
+<item Show_id="false" hflip="1" y="-100" endpinid="Stepper-2-PinB2" vflip="1" itemtype="Connector" valLabely="0" x="-492" circPos="0,0" labely="-24" enodeid="enode-28" objectName="Connector-28" valLabelx="0" id="Connector-28" labelx="-16" valLabRot="0" labelrot="0" mainComp="false" startpinid="ULN2804-4-OUT4" rotation="0" circRot="0" pointList="-492,-100,-460,-100,-460,-60,-396,-60" boardPos="-1e+06,-1e+06" boardRot="-1000000"/>
+ 
+</circuit>
