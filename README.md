@@ -2,7 +2,8 @@
 
 ##Equipe 
 
-*Lucas 
+
+* Lucas 
 * Mateus Paiva
-* Tiago
+* Thiago
 * Betarelli
