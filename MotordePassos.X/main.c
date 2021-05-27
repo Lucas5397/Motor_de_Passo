@@ -10,17 +10,19 @@
 #include <xc.h>
 #include "config.h"
 #include "delay.h"
+#include "configuracao.h"
+ 
 
-#define PORTDbits.RD2   A-    
-#define PORTDbits.RD3   B-    
-#define PORTDbits.RD4   A+    
-#define PORTDbits.RD5   B+    
+
 
 void main(void)
 {
+    motorpasso_init(4);
+    
     while(1)
     {
-        A+ = 1;
-        delay(1000);
+        stepMotor(CW,360, 500);
+        delay (1000);
     }
 }
+

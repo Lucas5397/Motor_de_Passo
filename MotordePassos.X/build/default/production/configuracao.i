@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "configuracao.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
+# 1 "configuracao.c" 2
 
 
 
@@ -2499,7 +2499,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
-# 9 "main.c" 2
+# 9 "configuracao.c" 2
 
 # 1 "./config.h" 1
 
@@ -2520,7 +2520,7 @@ extern __bank0 __bit __timeout;
 
 #pragma config BOR4V = BOR40V
 #pragma config WRT = OFF
-# 10 "main.c" 2
+# 10 "configuracao.c" 2
 
 # 1 "./delay.h" 1
 
@@ -2529,7 +2529,7 @@ extern __bank0 __bit __timeout;
 
 
 void delay( unsigned int t );
-# 11 "main.c" 2
+# 11 "configuracao.c" 2
 
 # 1 "./configuracao.h" 1
 
@@ -2540,19 +2540,39 @@ void delay( unsigned int t );
 
 void motorpasso_init (int pulsosporrevolucao );
 void stepMotor( char sentido, int graus, int t);
-# 12 "main.c" 2
+# 12 "configuracao.c" 2
 
 
+int ppr;
 
-
-
-void main(void)
+void motorpasso_init (int pulsosporrevolucao )
 {
-    motorpasso_init(4);
 
-    while(1)
+    TRISDbits.TRISD0 = 0;
+    TRISDbits.TRISD1 = 0;
+    TRISDbits.TRISD2 = 0;
+    TRISDbits.TRISD3 = 0;
+
+    PORTDbits.RD0 = 0;
+    PORTDbits.RD1 = 0;
+    PORTDbits.RD2 = 0;
+    PORTDbits.RD3 = 0;
+
+    ppr = pulsosporrevolucao;
+}
+
+char passos [8] = { 0x02,0x06, 0x04,0x05, 0x01,0x09,0x08, 0x0A};
+char indice = 0;
+
+void stepMotor( char sentido, int graus, int t)
+{
+    int numpassos;
+    int i;
+    numpassos = (graus * ppr)/180;
+    for ( i = 0; i<numpassos; i++)
     {
-        stepMotor(1,360, 500);
-        delay (1000);
+        PORTD = (( PORTD & 0XF0) | passos[indice] );
+        indice = (indice + sentido) % 8;
+        delay(t);
     }
 }
