@@ -2538,8 +2538,10 @@ void delay( unsigned int t );
 
 
 
+
+
 void motorpasso_init (int pulsosporrevolucao );
-void stepMotor( char sentido, int graus, int t);
+void stepMotor( char sentido, int graus, int t, char x) ;
 # 12 "configuracao.c" 2
 
 
@@ -2561,18 +2563,39 @@ void motorpasso_init (int pulsosporrevolucao )
     ppr = pulsosporrevolucao;
 }
 
-char passos [8] = { 0x02,0x06, 0x04,0x05, 0x01,0x09,0x08, 0x0A};
+char meiopassos [8] = { 0x02,0x06, 0x04,0x05, 0x01,0x09,0x08, 0x0A};
+char passos [4] = {0x02,0x04,0x01,0x08};
 char indice = 0;
 
-void stepMotor( char sentido, int graus, int t)
+
+int numpassos;
+int x;
+
+void stepMotor( char sentido, int graus, int t, char x)
 {
-    int numpassos;
-    int i;
-    numpassos = (graus * ppr)/180;
-    for ( i = 0; i<numpassos; i++)
+    if (x == 8)
     {
-        PORTD = (( PORTD & 0XF0) | passos[indice] );
-        indice = (indice + sentido) % 8;
-        delay(t);
+        numpassos = (graus * ppr)/180;
+        for ( x = 0; x<numpassos; x++)
+        {
+            PORTD = (( PORTD & 0XF0) | meiopassos[indice] );
+            indice = (indice + sentido) % 8;
+            delay(t);
+        }
     }
+
+    if ( x == 4)
+    {
+
+       numpassos = (graus * ppr)/360;
+        for ( x = 0; x<numpassos; x++)
+        {
+            PORTD = (( PORTD & 0XF0) | passos[indice] );
+            indice = (indice + sentido) % 4;
+            delay(t);
+        }
+    }
+
+
+
 }

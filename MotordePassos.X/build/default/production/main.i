@@ -2538,8 +2538,10 @@ void delay( unsigned int t );
 
 
 
+
+
 void motorpasso_init (int pulsosporrevolucao );
-void stepMotor( char sentido, int graus, int t);
+void stepMotor( char sentido, int graus, int t, char x) ;
 # 12 "main.c" 2
 
 
@@ -2552,7 +2554,7 @@ void main(void)
 
     while(1)
     {
-        stepMotor(1,360, 500);
-        delay (1000);
+        stepMotor(1,360, 500, 8);
+
     }
 }

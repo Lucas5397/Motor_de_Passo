@@ -20,8 +20,8 @@ void main(void)
     
     while(1)
     {
-        stepMotor(CW,360, 500);
-        delay (1000);
+        stepMotor(CW,360, 500, meio);
+        
     }
 }
 
