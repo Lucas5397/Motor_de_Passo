@@ -1,9 +1,7 @@
 # Motor_de_Passo
+##EQUIPE
 
-##Equipe 
-
-
-* Lucas 
-* Mateus Paiva
-* Thiago
-* Betarelli
+*lUCAS CABELEREIRO
+*THIAGO ELYTE
+*PAIVA LOIRO SAFADO
+*BETARELLI MANO DE SALTO
